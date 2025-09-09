@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdhan Singha | Online Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #2c2f33;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/2c2f33/white?text=Professional+Image');
+            background-size: cover;
+            background-position: center;
+        }
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 50;
+        }
+        .modal {
+            max-width: 90%;
+            width: 400px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="relative text-white py-12 px-4 md:px-8 hero-bg">
+        <!-- Navigation -->
+        <nav class="flex flex-col md:flex-row justify-between items-center mb-16 md:mb-24">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <a href="#" class="text-2xl font-bold tracking-tight">Online Portfolio</a>
+                <p class="text-sm text-gray-400">Just another My Blog site</p>
+            </div>
+            <ul class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-medium">
+                <li><a href="#home" class="hover:text-cyan-400 transition-colors">HOME</a></li>
+                <li><a href="#about" class="hover:text-cyan-400 transition-colors">ABOUT ME</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">SERVICES</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">SKILL</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">TESTIMONIAL</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">EXPERIENCE</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">WORKS</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">BLOG</a></li>
+                <li><a href="#" class="hover:text-cyan-400 transition-colors">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="flex flex-col md:flex-row items-center md:items-start max-w-7xl mx-auto md:space-x-12">
+            <!-- Text Content -->
+            <div class="flex-1 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">BIRDHAN SINGHA</h1>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-8">
+                    Hi, I am a Professional Developer and ICT Degree holder. I have five years experience in IT Sector as an ICT Lecturer, I'd like...
+                </p>
+                <button id="get-started-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-white py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:space-x-16">
+            <!-- Image (placeholder) -->
+            <div class="flex-shrink-0 mb-8 lg:mb-0">
+                <img src="WhatsApp Image 2025-09-09 at 21.13.15_dfb4f9bb.jpg" alt="Birdhan Singha" class="rounded-lg shadow-xl w-full lg:w-[400px] h-auto">
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">ABOUT ME</h2>
+                <div class="text-gray-600 space-y-4 text-base leading-relaxed">
+                    <p>
+                        I Am Developer blends expertise with industry know-how to guide your next property development.
+                    </p>
+                    <p>
+                        Software Developers use software development languages and tools to write, edit, maintain, and test computer software. Software Developers follow the software development lifecycle (SDLC) to plan, design, build, test, and deploy software applications, ranging from websites and mobile applications to web applications and video games. In addition to creating new software, Software Developers improve and maintain the working order of existing software.
+                    </p>
+                </div>
+                <button class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors">
+                    DOWNLOAD RESUME
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Modal -->
+    <div id="contact-modal" class="fixed inset-0 flex items-center justify-center hidden modal-overlay">
+        <div class="bg-white rounded-lg p-8 shadow-2xl relative modal transform transition-transform duration-300 scale-95">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Information</h2>
+            <div class="space-y-4 text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-user text-blue-500"></i>
+                    <span class="font-medium">Name:</span>
+                    <span>Birdhan Singha</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-blue-500"></i>
+                    <span class="font-medium">Phone:</span>
+                    <span>+91 7865333559</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-envelope text-blue-500"></i>
+                    <span class="font-medium">Email:</span>
+                    <span>birdhan.singha@example.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const getStartedBtn = document.getElementById('get-started-btn');
+            const contactModal = document.getElementById('contact-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+
+            // Show the modal
+            getStartedBtn.addEventListener('click', () => {
+                contactModal.classList.remove('hidden');
+            });
+
+            // Hide the modal
+            closeModalBtn.addEventListener('click', () => {
+                contactModal.classList.add('hidden');
+            });
+
+            // Hide the modal when clicking outside of it
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) {
+                    contactModal.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
